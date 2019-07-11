@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>KDN: Korean Dream Night</title>
+<meta charset=“utf-8”>
+<link rel="stylesheet" type="text/css" href="main-bg.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+.content {
+	margin-left:350px;
+	width: 300px;
+	font-family: arial;
+	font-size: 15px;
+}
+
+</style>
+</head>
+<body>
+    <div id="wrapper">
+
+<div class="topnav">
+	<img src="KDN_logo1.png" id="logo">
+    <b>
+	<a href="index.html" class="links">Home</a>
+	<a href="programmes.html" class="links">Programmes</a>
+	<a href="artistes.html" class="links">Artistes</a>
+	<a href="ticketinfo.html" class="links">Ticket Info</a>
+	<a style="background-color: #ff7bdb;" href="gettix.html" class="links">Get Tickets!</a>
+	<a href="about.html" class="links">About</a>
+    </b>
+</div>
+
+<div class="header-images">
+</div>
+
+<div class="content">
+	<br>
+    <h2>BOOKING CONFIRMATION</h2> <br>
+	
+	<?php
+	date_default_timezone_set("Asia/Singapore");
+	echo date_default_timezone_get();
+	echo "<p>Order processed at ".date('H:i, jS F Y')."</p>";
+
+	echo "<p>Your order is as follows: </p>";
+	
+	?>
+
+<center>Your booking has been confirmed. <br><br>
+Please check your e-mail for order confirmation and tickets.<br> <br>
+Thank you! <br><br><br>
+Sincerely,<br>
+<img src="kdnsignature.jpg" alt="seatmap" width="52" height="31"> </center>
+    <p>
+    </p>
+</div>
+
+
+<footer>
+	<br><small><i>Copyright &copy; 2018 Korean Dream Night<br>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-youtube"></a>
+	<a href="#" class="fa fa-instagram"></a>
+</footer>
+
+</div>
+</body>
+</html>

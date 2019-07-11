@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>KDN: Kpop Dream Night</title>
+<meta charset=“utf-8”>
+<link rel="stylesheet" type="text/css" href="main-bg.css">
+
+<style>
+
+div#seats {
+	display:inline-block;
+	float: right;
+	margin-right:30px;
+	}
+	
+div#tickets {
+	display:inline-block;
+	float: left;
+
+}
+
+div#form {
+	float:left;
+	
+	}
+	
+div#payment {
+	margin-right: 350px;
+	float: right;
+}
+
+
+table {
+  margin: auto;
+  margin: 5px solid #282828;
+  width: 350px;
+  border-spacing:1;
+  font-family:"Arial", Helvetica, sans-serif;
+}
+th{
+  padding:10px;
+  font-weight: bold;
+  border-style: none;
+}
+td{
+  padding:10px;
+  font-weight:  normal;
+  border-style: none;
+}
+
+caption{
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+tr:nth-of-type(odd) {
+  background-color: #ccaa66;
+}
+
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+<div class="topnav">
+	<b>
+	<a href="index.html" class="links">Home</a>
+	<a href="programmes.html" class="links">Programmes</a>
+	<a href="artistes.html" class="links">Artistes</a>
+	<a href="ticketinfo.html" class="links">Ticket Info</a>
+	<a style="background-color: #ff7bdb;" href="gettix.html" class="links">Get Tickets!</a>
+	<a href="about.html" class="links">About</a>
+	</b>
+</div>
+
+
+<div class="content">
+	<h2><center>GET TICKETS!</center></h2>
+	<br>
+
+	<div id="seats">
+		<img src="seatingplan.jpg" alt="seating plan" id="seatingplan" height="340" width="490" align="left">
+		<br><br><br>
+		
+		<div id="payment">
+		<br>
+		<table style="width: 100px; background-color:white;">
+		<tr>
+		<td>TOTAL:</td> 
+		</tr>
+		
+		<tr>
+		<td>Payment Method:</td>
+		</tr>
+		</table>
+		</div>
+		
+	</div>
+	
+	<div id="form">
+	<fieldset>
+	<legend>Purchase Order</legend>
+	<input type="text" name="Name"  id="Name" hspace="33" required value="Name" style="width: 300px"><br >
+	
+	<input type="text" name="Contact"  id="Contact" hspace="35" required value="Contact"><br >
+   
+	<input type="text" name="CustEmail"  id="CustEmail" hspace="35" required value="E-mail Address"><br >
+	</fieldset>
+	<br>
+	</div>
+	<br>
+
+	
+	<div id="tickets">
+	<table border="1">
+	
+	<form action="orderform.php" method="post">
+	
+	<tr>	<th>Type of Ticket</th>
+			<th>Price</th>
+			<th>Quantity</th>
+	</tr>
+	
+	<tr>	
+			<td style="width:30%;text-align:center;font-weight:bolder;">CAT 1 (VIP) </td>
+			<td style="width:25%;text-align:center;">S$250</td>
+			<td><select style="width: 100px;">
+				<option value=""></option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select></td>
+	</tr>
+	
+	<tr>	
+			<td style="width:18%;text-align:center;font-weight:bolder;">CAT 2 </td>
+			<td style="width:18%;text-align:center;">S$250</td>
+			<td><select style="width: 100px;">
+				<option value=""></option>			
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select></td>
+	</tr>
+	
+	<tr>	
+			<td style="width:18%;text-align:center;font-weight:bolder;">CAT 3 </td>
+			<td style="width:18%;text-align:center;">S$250</td>
+			<td><select style="width: 100px;">
+				<option value=""></option>			
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>	</td>		
+	</tr>
+	
+	<tr>	
+			<td style="width:18%;text-align:center;font-weight:bolder;">CAT 4 </td>
+			<td style="width:18%;text-align:center;">S$250</td>
+			<td><select style="width: 100px;">
+				<option value=""></option>			
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>			</td>
+	</tr>
+	
+	<tr>	
+			<td style="width:18%;text-align:center;font-weight:bolder;">CAT 5 </td>
+			<td style="width:18%;text-align:center;">S$250</td>
+			<td><select style="width: 100px;">
+				<option value=""></option>			
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>		</td>	
+	</tr>
+	
+	<tr>	
+			<td style="width:18%;text-align:center;font-weight:bolder;">CAT 6 </td>
+			<td style="width:18%;text-align:center;">S$250</td>
+			<td><select style="width: 100px;">
+				<option value="">		
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>	</td>		
+	</tr>
+	</div>
+
+</div>
+	</table>
+</div>
+
+
+
+
+<footer>
+	<br><small><i>Copyright &copy; 2018 Korean Dream Night<br>
+	<a href="mailto:najihah@abdulrazak.com" class="links">najihah@abdulrazak.com</a>
+
+</footer>
+
+</div>
+</body>
+</html>

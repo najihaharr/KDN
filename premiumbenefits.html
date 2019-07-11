@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>KDN: Korean Dream Night</title>
+<meta charset=“utf-8”>
+<link rel="stylesheet" type="text/css" href="main-bg.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+#terms{
+	border-style: solid;
+	width:600px;
+	text-align: justify;
+	padding: 5px 10px;
+}
+
+</style>
+</head>
+<body>
+    <div id="wrapper">
+
+<div class="topnav">
+	<img src="KDN_logo1.png" id="logo">
+    <b>
+    <a href="index.html" class="links">Home</a>
+    <a href="programmes.html" class="links">Programmes</a>
+    <a href="artistes.html" class="links">Artistes</a>
+    <a href="ticketinfo.html" class="links">Ticket Info</a>
+    <a style="background-color: #ff7bdb;" href="gettix.php" class="links">Get Tickets!</a>
+    <a href="about.html" class="links">About</a>
+    </b>
+</div>
+
+	<center>
+    <h2>PREMIUM BENEFITS</h2>
+	<h3> Terms and Conditions </h3>
+	
+	<p><i>Please read the T&Cs stated below</i></p>
+	<div id="terms">
+	<p>1. No pictures without the consent of the idols are allowed</p>
+	<p>2. Any inappropriate behaviours will be taken seriously and you will be asked to leave</p>
+	<p>3. Any decisions on the selection of participants is made final by KDN</p>
+	<p>4. Artistes schedules are subjected to change</p>
+	<p>5. KDN reserves the right to amend the T&Cs without prior notice</p>
+	</div>
+	<br>
+<form action="bookingconfirmation.php">
+  <input type="checkbox" name="tandcs" value="tandcs" id="tandcs" onclick="checkbox();" /><small> I have read and agree to adhere the rules and regulations throughout the event and understand the Terms and Conditions stated.</small><br><br>
+  <input type="submit" name="terms" value="I Accept" id="term" disabled >
+</form>
+</center>
+
+<script>
+function checkbox(){
+	var checkbox = document.getElementById("tandcs");
+	
+	if (checkbox.checked == true)	
+		document.getElementById("term").disabled = false;
+	else
+		document.getElementById("term").disabled = true;
+}
+
+</script>
+
+
+<footer>
+	<br><small><i>Copyright &copy; 2018 Korean Dream Night<br>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-youtube"></a>
+	<a href="#" class="fa fa-instagram"></a>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+	font-family: Lucida Sans, Arial sans-serif;
+    background-color: #571da3;
+	font-size: 13px;
+	margin-top: 100;
+}
+
+#wrapper { background-color: #FFFFFF; 
+           color: #000000;
+			width: 80%;
+			min-width:900px;
+		   min-height:500px;
+		   margin-left: auto;
+		   margin-right:auto;
+		   /* box-shadow: 5px 5px 5px grey; */
+} 
+
+#logo {
+	float: left;
+	position: relative;
+	display: inline-block;
+	height:63px;
+	margin-left: 10;
+	padding: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+	display:inline-block;
+	width: 100%;
+    background-color: #602ab4;
+	position:relative;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #571da3;
+    color: #f2f2f2;
+}
+
+footer {
+	font-size:90%;
+    text-align: center;
+	clear: right;
+    padding-bottom:20px;
+	padding-top:20px;
+	background-color: ffffff;
+	color: 000000;
+}	
+
+.fa {
+  padding: 13px;
+  font-size: 15px;
+  width: 10px;
+  height: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+  border-radius: 10%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

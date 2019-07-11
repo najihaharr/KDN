@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>KDN: Korean Dream Night</title>
+<meta charset=“utf-8”>
+<link rel="stylesheet" type="text/css" href="main-bg.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+table#t01 {
+  border: 1px solid black;    
+    background-color: #f1f1c1;
+  margin-top: 30px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+	width: 59%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    <div id="wrapper">
+
+<div class="topnav">
+	<img src="KDN_logo1.png" id="logo">
+    <b>
+    <a href="index.html" class="links">Home</a>
+    <a href="programmes.html" class="links">Programmes</a>
+    <a href="artistes.html" class="links">Artistes</a>
+    <a href="ticketinfo.html" class="links">Ticket Info</a>
+    <a style="background-color: #ff7bdb;" href="gettix.php" class="links">Get Tickets!</a>
+    <a href="about.html" class="links">About</a>
+    </b>
+</div>
+
+
+<center>
+  <h2>ABOUT <br> 
+  Korean Dream Night <br> </h2>
+
+  <b>Reminisce with us</b><br>
+  <br><br>
+
+<button class="accordion">Information</button> 
+<div class="panel">
+  <p><b>ONE NIGHT CONCERT ONLY</b><br><br>
+  <p style="text-align:justify;"> Korean Dream Night is the first of its kind in Singapore. Over 80 K-pop idols will descend on our sunny island on 22 December to celebrate Hallyu fun with you.<br>
+  <br>It will be the only K-pop music festival you'll want to attend this year. Our artiste line-up features some of the hottest 2nd gen K-pop stars on the planet! The artistes have prepared enchanting setlist for it! Not to mention SHINee, 2PM, IU many more. 
+  You may also get to have dinner with them! Stay tuned to find out! 
+
+</div>
+
+<button class="accordion">Get in Touch</button>
+<div class="panel">
+  <br><br>
+  <a href="mailto:hello@kdn.com.sg " class="links">General Enquires</a><br><br>
+  <a href="mailto:sales@kdn.com.sg " class="links">Sponsorship and Partnership</a><br><br>
+  <a href="mailto:media@kdn.com.sg " class="links">Media Enquires</a><br><br>
+  <br>
+  
+  
+</div>
+
+</center>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+<br><br>
+
+<footer>
+	<br><small><i>Copyright &copy; 2018 Korean Dream Night<br>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-youtube"></a>
+	<a href="#" class="fa fa-instagram"></a>
+</footer>
+
+</div>
+</body>
+</html>
